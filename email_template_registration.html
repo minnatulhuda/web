@@ -1,0 +1,138 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Konfirmasi Pendaftaran Minnatul Huda</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<style type="text/css">
+    /* RESET & BASE */
+    body { margin: 0 !important; padding: 0 !important; width: 100% !important; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; background-color: #f1f5f9; color: #334155; }
+    img { border: 0; outline: none; text-decoration: none; }
+    table { border-collapse: collapse !important; width: 100%; }
+    
+    /* WRAPPER */
+    .wrapper { width: 100%; padding: 40px 0; background-color: #f1f5f9; }
+    .main-table { background-color: #ffffff; width: 100%; max-width: 600px; margin: 0 auto; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); }
+
+    /* HEADER */
+    .header { background-color: #059669; padding: 40px 20px; text-align: center; }
+    h1 { color: #ffffff; margin: 15px 0 5px 0; font-size: 22px; font-weight: 800; letter-spacing: 0.5px; }
+    .subtitle { color: #d1fae5; font-size: 14px; font-weight: 500; }
+
+    /* CONTENT */
+    .content { padding: 30px 30px; }
+    .greeting { font-size: 16px; margin-bottom: 20px; line-height: 1.6; }
+    .section-title { font-weight: bold; color: #059669; border-bottom: 2px solid #e2e8f0; padding-bottom: 10px; margin-bottom: 20px; font-size: 16px; text-transform: uppercase; letter-spacing: 1px; }
+
+    /* DATA GRID */
+    .data-row { margin-bottom: 12px; padding-bottom: 12px; border-bottom: 1px dashed #e2e8f0; }
+    .data-label { font-size: 12px; color: #64748b; font-weight: bold; text-transform: uppercase; margin-bottom: 4px; }
+    .data-value { font-size: 15px; color: #1e293b; font-weight: 600; }
+    .data-row:last-child { border-bottom: none; }
+
+    /* TAGS */
+    .tag { display: inline-block; background: #dcfce7; color: #166534; padding: 4px 10px; border-radius: 4px; font-size: 12px; font-weight: bold; }
+
+    /* ACTION */
+    .action-box { background-color: #f8fafc; padding: 20px; border-radius: 8px; border: 1px solid #e2e8f0; text-align: center; margin-top: 30px; }
+    .btn { display: inline-block; padding: 12px 28px; background-color: #059669; color: #ffffff !important; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 14px; margin-top: 10px; box-shadow: 0 4px 6px -1px rgba(5, 150, 105, 0.4); }
+    
+    /* FOOTER */
+    .footer { background-color: #1e293b; padding: 30px 20px; text-align: center; font-size: 12px; color: #94a3b8; }
+    .footer strong { color: #f8fafc; display: block; margin-bottom: 5px; font-size: 14px; }
+
+    @media screen and (max-width: 600px) {
+        .content { padding: 20px; }
+    }
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <table class="main-table">
+        <!-- HEADER -->
+        <tr>
+            <td class="header">
+                <img src="https://imgur.com/4hdcTD7.png" width="70" alt="Logo" />
+                <h1>YAYASAN MINNATUL HUDA</h1>
+                <div class="subtitle">Konfirmasi Pendaftaran Peserta Didik Baru</div>
+            </td>
+        </tr>
+
+        <!-- CONTENT -->
+        <tr>
+            <td class="content">
+                <div class="greeting">
+                    Assalamualaikum Warahmatullahi Wabarakatuh,<br/><br/>
+                    Selamat <strong>{{nama}}</strong>, formulir pendaftaran Anda telah berhasil kami terima. Berikut adalah rincian data yang Anda kirimkan:
+                </div>
+
+                <div class="section-title">DATA AKADEMIK</div>
+                
+                <div class="data-row">
+                    <div class="data-label">Jenjang Pendidikan</div>
+                    <div class="data-value"><span class="tag">{{jenjang}}</span></div>
+                </div>
+                <div class="data-row">
+                    <div class="data-label">Jurusan / Program</div>
+                    <div class="data-value">{{jurusan}}</div>
+                </div>
+
+                <br/>
+                <div class="section-title">IDENTITAS SISWA</div>
+
+                <div class="data-row">
+                    <div class="data-label">Nama Lengkap</div>
+                    <div class="data-value">{{nama}}</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-label">NISN</div>
+                    <div class="data-value">{{nisn}}</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-label">Tempat, Tanggal Lahir</div>
+                    <div class="data-value">{{ttl}}</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-label">Alamat Lengkap</div>
+                    <div class="data-value">{{alamat}}</div>
+                </div>
+
+                <br/>
+                <div class="section-title">KONTAK & WALI</div>
+
+                <div class="data-row">
+                    <div class="data-label">Nama Orang Tua / Wali</div>
+                    <div class="data-value">{{wali}}</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-label">Nomor WhatsApp</div>
+                    <div class="data-value">{{telepon}}</div>
+                </div>
+                <div class="data-row">
+                    <div class="data-label">Email</div>
+                    <div class="data-value">{{to_email}}</div>
+                </div>
+
+                <div class="action-box">
+                    <p style="margin:0 0 10px 0;font-size:14px;color:#64748b;">
+                        Panitia akan segera menghubungi Anda melalui WhatsApp untuk proses seleksi dan daftar ulang.
+                    </p>
+                    <a href="https://wa.me/6287764777698" class="btn">Hubungi Panitia via WhatsApp</a>
+                </div>
+            </td>
+        </tr>
+
+        <!-- FOOTER -->
+        <tr>
+            <td class="footer">
+                <strong>Pondok Pesantren Terpadu Minnatul Huda</strong>
+                Kp. Cibogo Peuntas, Desa Cibogohilir, Kec. Plered<br/>
+                Kabupaten Purwakarta, Jawa Barat 41162<br/><br/>
+                &copy; 2025 Yayasan Pendidikan Minnatul Huda.
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
